@@ -1,0 +1,40 @@
+.header {
+   width: 100%;
+   height: calc(100vh);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+
+   &__image {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+   }
+
+   &__header-text {
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      z-index: 15;
+      letter-spacing: .4rem;
+      font-weight: 700;
+      text-align: left;
+      font-family: 'Amatic SC', cursive;
+
+      &--main {
+         color: $primary-text;
+         font-size: 7.5rem;
+         animation: fadeFromTop 1s ease-out;
+         -webkit-animation: fadeFromTop 1s ease-out;
+}
+
+      &--sub {
+         color: $secondary-text;
+         font-size: 4.2rem;
+         margin-left: 8rem;
+         animation: fadeFromBottom 1s ease-out;
+         -webkit-animation: fadeFromBottom 1s ease-out;
+}
+   }
+}

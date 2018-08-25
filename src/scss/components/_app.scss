@@ -1,3 +1,11 @@
 .App {
   text-align: center;
+  width: 100%;
+}
+
+.section {
+  &__about {
+    height: 35vh;
+    border-top: 2px solid  $accent-color;
+  }
 }

@@ -38,6 +38,7 @@
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
+    "react-snowflakes": "^1.0.0",
     "react-svg": "^5.0.21",
     "react-transition-group": "^2.4.0",
     "redux": "^4.0.0",
