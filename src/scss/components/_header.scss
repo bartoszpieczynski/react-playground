@@ -25,16 +25,16 @@
       &--main {
          color: $primary-text;
          font-size: 7.5rem;
-         animation: fadeFromTop 1s ease-out;
-         -webkit-animation: fadeFromTop 1s ease-out;
+         animation: fadeFromLeft 1s ease-out;
+         -webkit-animation: fadeFromLeft 1s ease-out;
 }
 
       &--sub {
          color: $secondary-text;
          font-size: 4.2rem;
          margin-left: 8rem;
-         animation: fadeFromBottom 1s ease-out;
-         -webkit-animation: fadeFromBottom 1s ease-out;
+         animation: fadeFromRight 1s ease-out;
+         -webkit-animation: fadeFromRight 1s ease-out;
 }
    }
 }
