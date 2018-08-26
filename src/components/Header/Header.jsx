@@ -1,14 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
 import background from "../../images/mountain-header.jpg";
 import { DepthOfFieldSnowfall } from "react-snowflakes";
 
-const header = props => {
-   return (
-      <div className="header">
+class Header extends Component {
+   state = {
+      display: true
+   };
+
+   componentDidUpdate(prevProps) {
+      if (prevProps.width !== this.props.width) {
+         this.setState({ display: false }, () => {
+            this.setState({ display: true });
+         });
+      }
+   }
+
+   render() {
+      // Workaround to the issue where snowflakes stretched the screen after changing its width to a smaller one
+      let snowflakes = (
          <DepthOfFieldSnowfall
             count={50}
             style={{
-               position: "relative",
+               display: this.state.display,
+               position: "absolute",
                margin: "0 auto",
                width: "90%",
                height: "90%",
@@ -16,15 +30,25 @@ const header = props => {
                color: "#b8c8f3"
             }}
          />
-         <div className="header__header-text">
-            <h1 className="header__header-text--main">Hi! I'm Bartek</h1>
-            <h2 className="header__header-text--sub">
-               and this is my portfolio
-            </h2>
-         </div>
-         <img className="header__image" src={background} alt="mountains" />
-      </div>
-   );
-};
+      );
+      if (!this.state.display) {
+         snowflakes = null;
+      }
+      // End of the workaround
 
-export default header;
+      return (
+         <div className="header">
+            {snowflakes}
+            <div className="header__header-text">
+               <h1 className="header__header-text--main">Hi! I'm Bartek</h1>
+               <h2 className="header__header-text--sub">
+                  and this is my portfolio
+               </h2>
+            </div>
+            <img className="header__image" src={background} alt="mountains" />
+         </div>
+      );
+   }
+}
+
+export default Header;

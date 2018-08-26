@@ -4,6 +4,7 @@
    background-repeat: no-repeat;
    background-size: cover;
    position: relative;
+   border-bottom: 2px solid $accent-color;
 
    &__image {
       position: absolute;
