@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import background from "../../images/mountain-header.jpg";
 import { DepthOfFieldSnowfall } from "react-snowflakes";
 
 class Header extends Component {
    state = {
       display: true
    };
-
+   // Workaround to the issue where snowflakes stretched the screen after changing its width to a smaller one
    componentDidUpdate(prevProps) {
       if (prevProps.width !== this.props.width) {
          this.setState({ display: false }, () => {
@@ -16,7 +15,6 @@ class Header extends Component {
    }
 
    render() {
-      // Workaround to the issue where snowflakes stretched the screen after changing its width to a smaller one
       let snowflakes = (
          <DepthOfFieldSnowfall
             count={50}
@@ -45,7 +43,7 @@ class Header extends Component {
                   and this is my portfolio
                </h2>
             </div>
-            <img className="header__image" src={background} alt="mountains" />
+            <img className="header__image" src={'./images/mountain-header.jpg'} alt="mountains" />
          </div>
       );
    }

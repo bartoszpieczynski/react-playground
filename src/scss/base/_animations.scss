@@ -6,7 +6,7 @@
       -moz-transform: translateY(-100px);
       -ms-transform: translateY(-100px);
       -o-transform: translateY(-100px);
-}
+   }
    to {
       opacity: 1;
       transform: translateY(0);
@@ -14,7 +14,7 @@
       -moz-transform: translateY(0);
       -ms-transform: translateY(0);
       -o-transform: translateY(0);
-}
+   }
 }
 
 @keyframes fadeFromLeft {
@@ -52,5 +52,22 @@
       -moz-transform: translateX(0);
       -ms-transform: translateX(0);
       -o-transform: translateX(0);
+   }
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
    }
 }
