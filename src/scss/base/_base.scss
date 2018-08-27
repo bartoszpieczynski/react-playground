@@ -1,45 +1,53 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
 }
 
 html {
    // 1 rem = 10px
    font-size: 62.5%;
- 
+
    @include respond(big-desktop) {
-     font-size: 75%; // 1rem = 12px
+      font-size: 75%; // 1rem = 12px
    }
- 
+
    @include respond(tab-land) {
-     font-size: 56.25%; // 1rem = 9px
+      font-size: 56.25%; // 1rem = 9px
    }
- 
+
    @include respond(tab-port) {
-     font-size: 50%; // 1rem = 8px
+      font-size: 50%; // 1rem = 8px
    }
 }
 
 .container {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
+   width: 80%;
+   height: 100%;
+   margin: 0 auto;
 }
 
 .section {
-  position: relative;
+   position: relative;
+   min-height: 100vh;
 
-  &:not(.section__about) {
-     border-top: 2px solid $accent-color;
-  }
+   &:not(.section__about) {
+      border-top: 2px solid $accent-color;
+   }
 
-  &__title {
-     font-size: 7rem;
-     color: $primary-text;
-     font-family: "Amatic SC", cursive;
-     padding-top: 8rem;
-  }
+   &__title {
+      font-family: "Amatic SC", cursive;
+      font-size: 7rem;
+      color: $primary-text;
+      padding-top: 8rem;
+   }
+
+   &__paragraph {
+      font-family: "Amatic SC", cursive;
+      font-size: 3rem;
+      color: $secondary-text;
+      font-weight: 700;
+   }
 }

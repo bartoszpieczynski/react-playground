@@ -4,8 +4,9 @@ import { withRouter } from "react-router-dom";
 
 import Navbar from "../components/Navbar/Navbar";
 import Header from "../components/Header/Header";
-import About from '../components/About/About';
-import Skills from '../components/Skills/Skills';
+import About from "../components/About/About";
+import Skills from "../components/Skills/Skills";
+import Projects from "../components/Projects/Projects";
 
 class App extends Component {
    state = {
@@ -35,8 +36,14 @@ class App extends Component {
       ) {
          this.setState({ navColor: "#8BC34A" });
       }
-      if (position > document.getElementById("skills").offsetTop - 100) {
+      if (
+         position > document.getElementById("skills").offsetTop - 100 &&
+         position <= document.getElementById("projects").offsetTop - 100
+      ) {
          this.setState({ navColor: "#fc913a" });
+      }
+      if (position > document.getElementById("projects").offsetTop - 100) {
+         this.setState({ navColor: "#bd4c24" });
       }
    };
 
@@ -53,6 +60,7 @@ class App extends Component {
             <Header width={this.state.windowWidth} />
             <About />
             <Skills />
+            <Projects />
          </div>
       );
    }

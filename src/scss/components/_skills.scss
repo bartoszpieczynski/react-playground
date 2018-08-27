@@ -1,5 +1,4 @@
 .section-skills {
-   height: 100vh;
 
    &__image {
       &--boat {
@@ -65,12 +64,17 @@
          }
       }
 
-      &__container {
+      &__container {   // THAT IS A CONTAINER FOR THE SUN
          position: absolute;
          top: 20%;
          right: 10%;
          width: 15rem;
          height: 15rem;
       }
+   }
+
+   &__info {
+      width: 60%;
+      margin: 0 auto;
    }
 }

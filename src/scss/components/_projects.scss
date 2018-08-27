@@ -1,0 +1,24 @@
+.section-projects {
+
+   &__info {
+      width: 60%;
+      margin: 0 auto;
+   }
+
+   &__image {
+
+      &--birch {
+         position: absolute;
+         top: 0;
+         left: 10%;
+         width: 15rem;
+      }
+
+      &--tree {
+         position: absolute;
+         bottom: 0;
+         right: 5%;
+         width: 45rem;
+      }
+   }
+}

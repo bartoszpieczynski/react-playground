@@ -19,7 +19,7 @@ const about = (props) => {
                            alt="me"
                         />
                      </div>
-                     <p className="section-about__info__text">
+                     <p className="section__paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Officiis impedit libero esse odio excepturi fuga
                         est ut itaque a quod suscipit, rerum asperiores.
@@ -30,16 +30,7 @@ const about = (props) => {
                         repudiandae omnis, eaque facere impedit fugiat. Dolorum
                         distinctio autem sequi enim quidem esse accusamus
                         repudiandae voluptatum nobis, velit, molestiae. Eaque
-                        maiores, harum. Saepe esse repellendus sint. Labore
-                        provident optio quis commodi quod quaerat quo similique
-                        perspiciatis libero facere. Suscipit odit quas nemo,
-                        enim laudantium, provident repellendus natus nostrum
-                        facilis expedita adipisci qui, harum minus quidem
-                        officia cupiditate repellat ut praesentium. Possimus
-                        corporis, error atque ex adipisci, illum suscipit
-                        pariatur saepe impedit aliquam amet eos reiciendis
-                        quidem hic, nisi. Sint nobis modi, nesciunt quasi
-                        placeat quia.
+                        maiores, harum.
                      </p>
                   </div>
                </div>
