@@ -3,23 +3,23 @@ import React from 'react';
 
 const about = (props) => {
    return (
-      <section id="about" className="section section__about">
+      <section id="about" className="section section-about">
                <h2 className="section__title">About Me</h2>
                <img
-                  className="section__about__image--bird"
+                  className="section-about__image--bird"
                   src={'./images/spring.png'}
                   alt="bird"
                />
                <div className="container">
-                  <div className="section__about__info">
+                  <div className="section-about__info">
                      <div className="photo-container">
                         <img
-                           className="section__about__image--me"
+                           className="section-about__image--me"
                            src={'./images/me.jpg'}
                            alt="me"
                         />
                      </div>
-                     <p className="section__about__info__text">
+                     <p className="section-about__info__text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Officiis impedit libero esse odio excepturi fuga
                         est ut itaque a quod suscipit, rerum asperiores.
@@ -44,7 +44,7 @@ const about = (props) => {
                   </div>
                </div>
                <img
-                  className="section__about__image--frog"
+                  className="section-about__image--frog"
                   src={'/images/frog.png'}
                   alt="frog"
                />

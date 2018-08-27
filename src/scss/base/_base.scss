@@ -28,3 +28,18 @@ html {
   height: 100%;
   margin: 0 auto;
 }
+
+.section {
+  position: relative;
+
+  &:not(.section__about) {
+     border-top: 2px solid $accent-color;
+  }
+
+  &__title {
+     font-size: 7rem;
+     color: $primary-text;
+     font-family: "Amatic SC", cursive;
+     padding-top: 8rem;
+  }
+}

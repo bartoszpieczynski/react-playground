@@ -1,0 +1,65 @@
+.section-about {
+   height: auto;
+   min-height: 100vh;
+
+   &__info {
+      width: 50%;
+      position: absolute;
+      top: 48%;
+      transform: translate(20%, -50%);
+      -webkit-transform: translate(20%, -50%);
+      -moz-transform: translate(20%, -50%);
+      -ms-transform: translate(20%, -50%);
+      -o-transform: translate(20%, -50%);
+
+      &__text {
+         font-family: "Amatic SC", cursive;
+         font-size: 2rem;
+         color: $secondary-text;
+         font-weight: 700;
+      }
+   }
+
+   &__image {
+      &--bird {
+         position: absolute;
+         right: 0;
+         top: 15%;
+         max-width: 40rem;
+      }
+
+      &--frog {
+         position: absolute;
+         left: 3%;
+         bottom: 5%;
+         width: 25rem;
+      }
+
+      &--me {
+         width: 35rem;
+         height: 35rem;
+         transform: translate(-12rem, 2rem) scale(1.2);
+         -webkit-transform: translate(-12rem, 2rem) scale(1.2);
+         -moz-transform: translate(-12rem, 2rem) scale(1.2);
+         -ms-transform: translate(-12rem, 2rem) scale(1.2);
+         -o-transform: translate(-12rem, 2rem) scale(1.2);
+      }
+   }
+}
+
+
+
+.photo-container {
+   width: 25rem;
+   height: 25rem;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+   overflow: hidden;
+   shape-outside: circle(52% at 34% 40%);
+   clip-path: circle(50%);
+   float: left;
+   margin-top: 16%;
+}
