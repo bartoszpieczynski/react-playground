@@ -11,7 +11,7 @@ import Projects from "../components/Projects/Projects";
 class App extends Component {
    state = {
       navColor: null,
-      windowWidth: "90%"
+      windowWidth: "90%",
    };
 
    componentDidMount() {
@@ -28,13 +28,13 @@ class App extends Component {
    colorChange = () => {
       let position = window.scrollY;
       if (position <= document.getElementById("about").offsetTop - 100) {
-         this.setState({ navColor: "#6e8fe8" });
+         this.setState({ navColor: "#6e8fe8"});
       }
       if (
          position > document.getElementById("about").offsetTop - 100 &&
          position <= document.getElementById("skills").offsetTop - 100
       ) {
-         this.setState({ navColor: "#8BC34A" });
+         this.setState({ navColor: "#8BC34A"});
       }
       if (
          position > document.getElementById("skills").offsetTop - 100 &&
