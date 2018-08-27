@@ -1,14 +1,8 @@
 .section-about {
 
    &__info {
-      width: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(20%, -50%);
-      -webkit-transform: translate(20%, -50%);
-      -moz-transform: translate(20%, -50%);
-      -ms-transform: translate(20%, -50%);
-      -o-transform: translate(20%, -50%);
+      width: 60%;
+      margin: 0 auto;
    }
 
    &__image {
