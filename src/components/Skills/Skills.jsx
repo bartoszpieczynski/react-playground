@@ -3,7 +3,7 @@ import React from "react";
 const skills = props => {
    return (
       <section id="skills" className="section section-skills">
-         <h2 className="section__title"> My Skills</h2>
+         <h2 className="section__title">My Skills</h2>
          <div className="section-skills__sun__container">
             <div className="section-skills__sun">
                <div className="section-skills__sun__circle" />
@@ -15,12 +15,12 @@ const skills = props => {
             </div>
          </div>
          <div className="container">
-            <div className="section-skills__info">
+            <div className="section__info">
                <p className="section__paragraph">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Reiciendis vel obcaecati ut nihil. Iusto tempore provident
-                  laborum consectetur cupiditate perferendis animi earum ipsa?
-                  Id, ipsam sed. Eveniet et repudiandae quam.
+                  This year I learned a lot of things like React, basics of Redux and webpack. <br />
+                  If you want to know more about my skills click on the button below.<br />
+                  I won't evaluate my skills because I believe that I'm not the one to judge but I will try to describe what I have learned
+                  and how comfortable I feel with those skills.
                </p>
             </div>
          </div>

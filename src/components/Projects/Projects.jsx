@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const projects = props => {
    return (
       <div id="projects" className="section section-projects">
@@ -15,12 +16,10 @@ const projects = props => {
             alt="autumn tree"
          />
          <div className="container">
-            <div className="section-projects__info">
+            <div className="section__info">
                <p className="section__paragraph">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Officiis pariatur laborum alias corporis in. Officiis beatae
-                  rem hic, rerum earum ipsa dolorum quisquam modi voluptatum
-                  architecto facilis sit, nihil culpa?
+                  While working for my last employer I have made around 10 websites but on this portfolio you will find only a few of my private projects.
+                  If you want to take a look at them, click on the button below and if you want to know more about projects that I have made for my employer, please contact me.
                </p>
             </div>
          </div>

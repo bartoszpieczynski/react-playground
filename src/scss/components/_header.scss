@@ -17,17 +17,36 @@
       top: 15%;
       left: 15%;
       z-index: 15;
-      letter-spacing: .4rem;
+      letter-spacing: 0.4rem;
       font-weight: 700;
       text-align: left;
-      font-family: 'Amatic SC', cursive;
+      font-family: "Amatic SC", cursive;
+
+      @include respond(tab-port) {
+         top: 25%;
+         left: 25%;
+      }
+
+      @include respond(phone-land) {
+            top: 35%;
+            left: 20%;
+      }
+
+      @include respond(phone) {
+            top: 35%;
+            left: 15%;
+      }
 
       &--main {
          color: $primary-text;
          font-size: 7.5rem;
          animation: fadeFromLeft 1s ease-out;
          -webkit-animation: fadeFromLeft 1s ease-out;
-}
+
+         @include respond(phone) {
+            font-size: 6.5rem
+         }
+      }
 
       &--sub {
          color: $secondary-text;
@@ -35,6 +54,14 @@
          margin-left: 8rem;
          animation: fadeFromRight 1s ease-out;
          -webkit-animation: fadeFromRight 1s ease-out;
-}
+
+         @include respond(phone-land) {
+            margin-left: 0;
+         }
+
+         @include respond(phone) {
+            font-size: 3.2rem
+         }
+      }
    }
 }

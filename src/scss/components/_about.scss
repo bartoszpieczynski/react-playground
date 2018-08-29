@@ -1,16 +1,27 @@
 .section-about {
 
-   &__info {
-      width: 60%;
-      margin: 0 auto;
-   }
-
    &__image {
       &--bird {
          position: absolute;
          right: 0;
          top: 15%;
-         max-width: 40rem;
+         max-width: 30rem;
+
+         @include respond(big-desktop) {
+            max-width: 40rem;
+         }
+
+         @include respond(tab-land) {
+            max-width: 22rem;
+         }
+
+         @include respond(phone-land) {
+            width: 15rem;
+         }
+
+         @include respond(phone) {
+            width: 10rem;
+         }
       }
 
       &--frog {
@@ -18,33 +29,23 @@
          left: 3%;
          bottom: 5%;
          width: 25rem;
-      }
 
-      &--me {
-         width: 35rem;
-         height: 35rem;
-         transform: translate(-12rem, 2rem) scale(1.2);
-         -webkit-transform: translate(-12rem, 2rem) scale(1.2);
-         -moz-transform: translate(-12rem, 2rem) scale(1.2);
-         -ms-transform: translate(-12rem, 2rem) scale(1.2);
-         -o-transform: translate(-12rem, 2rem) scale(1.2);
+         @include respond(tab-land) {
+            bottom: 10%;
+         }
+
+         @include respond(tab-port) {
+            width: 20rem;
+            bottom: 5%;
+         }
+
+         @include respond(phone-land) {
+            width: 15rem;
+         }
+
+         @include respond(phone) {
+            width: 10rem;
+         }
       }
    }
-}
-
-
-
-.photo-container {
-   width: 25rem;
-   height: 25rem;
-   transform: translateY(-50%);
-   -webkit-transform: translateY(-50%);
-   -moz-transform: translateY(-50%);
-   -ms-transform: translateY(-50%);
-   -o-transform: translateY(-50%);
-   overflow: hidden;
-   shape-outside: circle(52% at 34% 40%);
-   clip-path: circle(50%);
-   float: left;
-   margin-top: 20%;
 }
